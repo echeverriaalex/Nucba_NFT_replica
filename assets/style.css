@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalnia+Glaze:wght@100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Rowdies:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&family=Kalnia+Glaze:wght@100..700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap');
+
+:root{
+    --background: #02050e;
+    --primary: #1e50ff;
+    --secondary:  #272d37;
+    --btn-bg: #050d26;
+    --bg-azul-10: #e9eeff;
+    --bg-whote: #fff;
+    --bg-electric: #f0fbff;
+    --nav-bg: #0f1525;
+    --text-gray: #adb9c7;
+    --text-white: #f3f4f6;
+    --fire: #ff6d00;
+    --electric: #64d3ff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+/*
+body{
+    background: var(--background);
+}
+*/
+
+header{
+    background: var(--secondary);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 65px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbar,
+.navbar-list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar{
+    gap: 150px;
+}
+
+.navbar-list{
+    gap: 30px;
+}
+
+.navbar-list a{
+    font-size: 14px;
+    color: var(--text-gray);
+}
+
+.navbar-list .active{
+    font-weight: 600;
+    color: var(--text-white);
+}
+
+.logo{
+    height: 40%;
+}
+
+.cart-icon{
+    padding: 5px 10px;
+    height: 30px;
+}
+
+
+/* ------ MAIN ------*/
+main{
+    background-color: var(--background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: var(--text-white);
+}
+
+
+/* ------ HERO ------*/
+#hero{
+    max-width: 1200px;
+    margin-top: 65px;
+    padding: 70px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    gap: 20px;
+}
+
+.hero-info h1{
+    font-size: 48px;
+    font-weight: 800;
+    width: 80%;
+    min-width: 500px;
+}
+
+.hero-info p{
+    font-size: 14px;
+    width: 70%;
+    color: var(--text-gray);
+}
+
+.hero-info span{
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.hero-info a{
+    background: var(--primary);
+    color: var(--text-white);
+    width: 120px;
+    padding: 8px 0;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+.hero-card{
+    background: var(--secondary);
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-card-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-card-top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-card-top h3{
+    font-weight: 600;
+    font-size: 16px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.hero-card-top span{
+    background: var(--primary);
+    border-radius: 10px;
+    padding: 3px 0;
+    width: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.hero-card-bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero-card-creator{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hero-card-creator img{
+    height: 40px;
+    width: 40px;
+}
+
+.creator-info span,
+.hero-card-price p{
+    font-size: 12px;
+    color: var(--text-gray);
+    font-weight: 300;
+}
+
+.hero-card-price{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.creator-info p{
+    font-size: 14px;
+}
+
+.hero-card-price span{
+    font-weight: 700;
+}
+
+@media(max-width: 480px){
+
+    header{
+        background: red;
+        height: 60px;
+        padding: 0 5px;
+    }
+
+    .navbar-list{
+        gap: 10px;
+    }
+
+    .navbar-list a{
+        font-size: 10px;
+    }
+
+    .navbar{
+        gap: 10px;
+    }
+
+    .logo{
+        height: 50%;
+    }
+}
