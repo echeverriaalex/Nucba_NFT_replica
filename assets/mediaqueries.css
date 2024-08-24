@@ -1,0 +1,49 @@
+@media (max-width: 992px){
+
+    /*
+    #menu-toggle, .menu-label{
+    */
+
+
+    .navbar{
+        gap: 10px
+    }
+
+    .cart-icon{
+        height: 33px;
+        margin-right: 0rem;
+        margin-top: 4px;
+    }
+
+    .navbar-list{
+        display: none;
+    }
+}
+
+
+
+
+@media(max-width: 480px){
+
+    header{
+        background: red;
+        height: 60px;
+        padding: 0 5px;
+    }
+
+    .navbar-list{
+        gap: 10px;
+    }
+
+    .navbar-list a{
+        font-size: 10px;
+    }
+
+    .navbar{
+        gap: 10px;
+    }
+
+    .logo{
+        height: 50%;
+    }
+}
